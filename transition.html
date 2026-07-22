@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore CSS Transition</title>
+    <style>
+        .container
+        {
+            border: 2px solid burlywood;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin-bottom: 20px;
+            transition: width 3s ease-out;
+        }
+
+        .container:hover
+        {
+            width: 400px;
+            /* transform: rotate(45deg) translateX(150px); */
+            /* transition: transform 2s; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">1</div>
+    <div class="container">2</div>
+    <div class="container">3</div>
+</body>
+</html>
