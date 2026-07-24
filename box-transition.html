@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring CSS Transition</title>
+
+   <style>
+    .box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    rotate 2s;
+}
+
+.box:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  rotate: 180deg;
+}
+
+   </style>
+
+</head>
+<body>
+    
+
+
+  <p>
+    The box below combines transitions for: width, height, background-color,
+    rotate. Hover over the box to see these properties animated.
+  </p>
+  <div class="box">Sample</div>
+
+
+
+
+</body>
+</html>
