@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .container
+        {
+            display:flex;
+            gap:5px;
+            flex-wrap: wrap;
+        }
+        .card
+        {
+            border: 1px solid tomato;
+            height: 250px;
+            width: 250px;
+            background-color:aqua;
+            transition: transform 2s linear,
+            width 2s,
+            height 2s,
+            background-color 2s,
+            rotate 5s;
+            
+        }
+
+        #card-3:hover
+        {
+            width: 400px;
+            height:400px;
+            background-color: blueviolet;
+            rotate: 180deg;
+        }
+        .card:hover
+        {
+            transform: scale(1.5);
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sequi culpa? Dignissimos amet natus laborum, atque officiis ex numquam corporis.</p>
+    </div>
+    <div class="card">
+        <h3>Title</h3>
+        <p>Consectetur, reprehenderit. Eaque nostrum amet consequatur ullam nisi quae repudiandae labore error velit, eveniet, iusto officia voluptates quas ex delectus.</p>
+    </div>
+    <div id="card-3" class="card">
+        <h3>Title</h3>
+        <p>Eveniet accusamus consequatur quidem at aspernatur perspiciatis, tempore non nam ullam alias, praesentium exercitationem maiores maxime qui pariatur voluptates architecto.</p>
+    </div>
+    </section>
+</body>
+</html>
