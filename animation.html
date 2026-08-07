@@ -6,7 +6,7 @@
     <title>explore animation</title>
     <style>
        
-       @keyframes bounce {
+       @keyframes slide {
 
         from{
             left: 0;
@@ -15,6 +15,32 @@
         to
         {
             left: 500px;
+        }
+        
+       }
+
+       @keyframes bounce {
+
+        0%{
+            left:0px;
+            top:0px;
+        }
+
+        25%
+        {
+            left:150px;
+            top:200px;
+        }
+
+        50%
+        {
+            left:300px;
+            top:0px;
+        }
+        100%
+        {
+            left:500px;
+            top:200px;
         }
         
        }
@@ -34,7 +60,8 @@
             border-radius: 50%;
             background-color: red;
             position: relative;
-            animation: bounce 3s  ease-in-out 1s infinite alternate;
+            animation: bounce 3s ease-in 1s infinite alternate ;
+            /* animation: slide 3s  ease-in-out 1s infinite alternate; */
         }
 
     </style>
