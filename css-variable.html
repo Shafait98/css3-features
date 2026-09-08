@@ -19,6 +19,7 @@
 
         .box{
             border: 2px solid var(--primary-color);
+            width: calc(100% - 300px);
         }
         .box > h3
         {
@@ -30,6 +31,23 @@
             color: cadetblue;
             font-size: var(--font-size);
         }
+
+        .sidebar
+        {
+            background-color: bisque;
+        }
+        .content
+        {
+            background-color: darkgray;
+        }
+        .container
+        {
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+
     </style>
 </head>
 <body>
@@ -38,6 +56,14 @@
     <div class="box">
         <h3>i'm doing something</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas, minus quasi debitis deleniti deserunt ex ea, rem culpa eius, suscipit asperiores maiores illum necessitatibus! Distinctio cupiditate id accusamus explicabo fugit labore sequi odio quas perspiciatis vero, dolore adipisci qui.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <div class="content">
+           Main Content
+        </div>
     </div>
     
 </body>
