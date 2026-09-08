@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css variable</title>
     <style>
-        h1{
-            color: steelblue;
+       
+       :root{
+        --primary-color : purple;
+        --secondary-color: aqua;
+        --font-size: 20px;
+       }
+    
+       
+       h1{
+            color: var(--secondary-color);
         }
 
         .box{
-            border: 2px solid aqua;
+            border: 2px solid var(--primary-color);
         }
         .box > h3
         {
-            color: tomato;
+            color: var(--primary-color);
         }
 
         .box > p
         {
             color: cadetblue;
+            font-size: var(--font-size);
         }
     </style>
 </head>
